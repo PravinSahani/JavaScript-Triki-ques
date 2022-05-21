@@ -6,7 +6,7 @@ const obj ={
         console.log("Normal function name value: "+ name);//Access the global variable .
     },
     func2:()=>{
-        console.log("Arrow function name value: "+ this.name);//Because this keyword is not  bind to arrow function so that  this is unable to refer to obj values.
+        console.log("Arrow function name value: "+ this.name);//Because this keyword is not  bind to arrow function so that  this is unable to refer to obj values and that's why, it will print undefinde.
         console.log("Arrow function name value: "+ name);//It accesses the global variable.
     }
 }
